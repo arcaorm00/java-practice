@@ -1,0 +1,29 @@
+package com.practice.problem01;
+
+import java.util.Scanner;
+
+public class Gugudan1291 {
+	
+	public static void main(String[] args) {
+//		원하는 구구단의 범위를 입력받아 해당 구간의 구구단을 출력하는 프로그램을 작성하시오.
+//		<처리조건>
+//		(1) 구간의 처음과 끝을 입력받는다. 
+//		(2) 입력된 구간은 반드시 처음 입력 값이 끝의 입력 값보다 작아야 하는 것은 아니다.
+//		    즉 입력된 구간의 범위는 증가하거나 감소하는 순서 그대로 출력되어야 한다.​ 
+		
+//		구구단의 시작 범위 s,와 끝 범위 e를 입력받는다.(s와 e는 2부터 9사이의 정수) 
+//		하나의 결과가 출력되면 프로그램을 종료한다.
+		Scanner scan = new Scanner(System.in);
+		System.out.println("구구단으로 출력하고자 하는 2와 9 사이의 정수 두 수를 입력하시오.");
+		String nm = scan.next();
+		
+		nm = nm.trim();
+		int n = Integer.parseInt(nm.split("")[0]);
+		int m = Integer.parseInt(nm.split("")[1]);
+//		System.out.println(n);
+//		System.out.println(m);
+		
+		
+	}
+
+}
