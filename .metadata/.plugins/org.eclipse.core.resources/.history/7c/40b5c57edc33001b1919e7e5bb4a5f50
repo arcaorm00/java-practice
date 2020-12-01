@@ -1,0 +1,25 @@
+package com.practice.problem01;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Multiplication1430 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("수의 개수를 셀 세 숫자를 입력해주세요.");
+		int first = scan.nextInt();
+		int second = scan.nextInt();
+		int third = scan.nextInt();
+		
+		String result = Integer.toString(first * second * third);
+		String [] numbers = result.split("");
+		
+		Map<String, Integer> map = new HashMap();
+		
+		
+	}
+}
