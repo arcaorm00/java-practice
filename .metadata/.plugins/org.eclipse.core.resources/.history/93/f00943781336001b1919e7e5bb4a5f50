@@ -1,0 +1,9 @@
+package com.practice.problem01;
+
+public class Divisor1402 {
+
+	// 약수 구하기
+	public static void main(String[] args) {
+		
+	}
+}
