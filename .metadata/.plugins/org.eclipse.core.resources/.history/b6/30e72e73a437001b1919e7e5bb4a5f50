@@ -15,7 +15,6 @@ public class NumberSquare2046 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("출력할 정사각형의 변의 길이와 종류를 입력해주세요.");
 		String nm = scan.nextLine();
-		scan.close();
 		
 		int n = Integer.parseInt(nm.split(" ")[0]);
 		int m = Integer.parseInt(nm.split(" ")[1]);

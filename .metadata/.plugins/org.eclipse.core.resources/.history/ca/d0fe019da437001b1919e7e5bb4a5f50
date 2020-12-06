@@ -20,7 +20,6 @@ public class NumberSquare1304 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("정사각형으로 출력하고자 하는 변의 길이를 입력하세요. (100이하의 정수)");
 		int n = scan.nextInt();
-		scan.close();
 		
 		int num = 1;
 		int [][] arr = new int [n][n];

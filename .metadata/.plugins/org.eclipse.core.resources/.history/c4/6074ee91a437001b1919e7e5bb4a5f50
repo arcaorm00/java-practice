@@ -21,7 +21,6 @@ public class NumberSquare1303 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("사각형으로 출력하고자 하는 높이와 너비 수를 입력해주세요.(100 이하의 정수)");
 		String nm = scan.nextLine();
-		scan.close();
 		
 		nm = nm.replaceAll(" ", "");
 		int n = Integer.parseInt(nm.split("")[0]);

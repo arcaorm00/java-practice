@@ -1,5 +1,6 @@
 package com.practice.problem01;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class NumberSquare1856 {
@@ -21,7 +22,6 @@ public class NumberSquare1856 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("사각형으로 나타낼 높이와 너비 수를 입력해주세요.(100이하의 정수)");
 		String nm = scan.nextLine();
-		scan.close();
 		
 		nm = nm.replaceAll(" ", "");
 		int n = Integer.parseInt(nm.split("")[0]);

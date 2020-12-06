@@ -26,7 +26,6 @@ public class Gugudan1341 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("구구단을 출력할 범위를 2에서 9 사이의 정수로 입력해주세요.");
 		String nm = scan.nextLine();
-		scan.close();
 		
 		nm = nm.trim();
 		

@@ -28,7 +28,6 @@ public class Gugudan1291 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("구구단으로 출력하고자 하는 2와 9 사이의 정수 두 수를 입력하시오.");
 		String nm = scan.nextLine();
-		scan.close();
 		
 		nm = nm.trim();
 		nm = nm.replaceAll(" ", "");
