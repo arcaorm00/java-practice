@@ -1,0 +1,17 @@
+package com.practice.problem01;
+
+import java.util.Scanner;
+
+public class StarTest01 {
+
+	// 별찍기 예제
+	public static void main(String[] args) {
+		// 입력 받은 수만큼 별 찍기
+		Scanner scan = new Scanner(System.in);
+		System.out.print("출력하고자 하는 별의 수를 입력해주세요.");
+		int star = scan.nextInt();
+		scan.close();
+		
+		
+	}
+}
