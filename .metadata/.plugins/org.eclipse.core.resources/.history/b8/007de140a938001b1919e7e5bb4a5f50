@@ -9,7 +9,7 @@ public class SetTest01 {
 		Random rand = new Random();
 		TreeSet<Integer> ts = new TreeSet();
 		
-		while(ts.size() < 6) {
+		while(ts.size() <= 6) {
 			int num = rand.nextInt(45)+1;
 			System.out.println(num);
 			ts.add(num);
