@@ -1,0 +1,59 @@
+package com.practice.problem01;
+
+import java.util.Random;
+import java.util.TreeSet;
+
+public class SetTest01 {
+
+	public static void main(String[] args) {
+		Random rand = new Random();
+		TreeSet<Integer> ts = new TreeSet();
+		
+		while(ts.size() < 6) {
+			int num = rand.nextInt(45)+1;
+			System.out.println(num);
+			ts.add(num);
+		}
+		
+		System.out.println(ts);
+		
+		Random r = new Random();
+		int [] a = new int[6];
+
+		for( int i = 0 ; i < a.length ; ){
+			int n = r.nextInt(45)+1;
+			boolean flag = false;
+			for( int j = 0 ; j < i ; j++ ){ 
+//j < i 컨디션으로 i가 0이면 무조건 아래 a[i] = n을 만난다!
+				if( n == a[j] ){
+					flag = true;
+				}
+			}
+			if (flag == true ){
+				continue;
+			}
+			a[i] = n;
+			i++; 
+// flag가 true면(즉 a[j] 배열에 n이 있으면) 
+//i(배열의 사이즈)가 늘어나면 안 되기 때문에
+			//같은 수가 없을 때에만 a[i]에 n 값을 대입하고 i를 +1한다.
+		}
+		
+		for( int i = 0 ; i < a.length ; i++ ){
+			for(int j = i+1 ; j < a.length ; j++ ){
+				if( a[j] < a[i] ){
+					int temp;
+					temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
+				}
+			}
+		}
+		System.out.println("*** 이번 주 로또 추첨 번호 ***");
+		for( int i = 0 ; i < a.length ; i++ ){
+			System.out.print( a[i] + " ");
+		}
+
+
+	}
+}

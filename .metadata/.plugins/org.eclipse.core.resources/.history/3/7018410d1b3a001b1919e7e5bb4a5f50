@@ -1,0 +1,22 @@
+package com.practice.problem01;
+
+import java.util.Scanner;
+
+public class StarTest02 {
+
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("별로 나타낼 삼각형의 크기와 종류를 입력해주세요.");
+		String input = scan.nextLine();
+		scan.close();
+		
+		int size = Integer.parseInt(input.split(" ")[0]);
+		int kind = Integer.parseInt(input.split(" ")[1]);
+		
+		
+
+	}
+
+}

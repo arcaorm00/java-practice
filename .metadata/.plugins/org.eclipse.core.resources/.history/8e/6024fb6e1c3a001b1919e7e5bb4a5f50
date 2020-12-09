@@ -1,0 +1,51 @@
+package com.practice.problem01;
+
+import java.util.Scanner;
+
+public class StarTest02 {
+
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("별로 나타낼 삼각형의 크기와 종류를 입력해주세요.");
+		String input = scan.nextLine();
+		scan.close();
+		
+		int size = Integer.parseInt(input.split(" ")[0]);
+		int kind = Integer.parseInt(input.split(" ")[1]);
+		
+		if (size > 100 || kind > 4 || kind < 1) {
+			System.out.println("INPUT ERROR!");
+			return;
+		}
+		
+		switch(kind) {
+			case 1: 
+				for (int i = 0; i < size; i++) {
+					for (int j = 0; j < i+1; j++) {
+						System.out.print("*");
+					}
+					System.out.println();
+				};
+				break;
+			case 2:
+				for (int i = size; i > 0; i--) {
+					for (int j = 0; j < i; j++) {
+						System.out.print("*");
+					}
+					System.out.println();
+				};
+				break;
+			case 3:
+				for (int i = 0; i < size; i++) {
+					for (int j = 0; j < size*2; j++) {
+						System.out.print("*");
+					}
+					System.out.println();
+				}
+		}
+
+	}
+
+}
