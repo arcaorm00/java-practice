@@ -19,10 +19,8 @@ public class BinaryNumber2814 {
 		
 		for (int i = binaryNums.length-1; i >= 0; i--) {
 			int n = Integer.parseInt(binaryNums[i]);
-			ten = (int)(ten + n*(Math.pow(2, cnt)));
 			cnt++;
+			ten = (int)(ten + n*(Math.pow(2, cnt)));
 		}
-		
-		System.out.println(ten);
 	}
 }
