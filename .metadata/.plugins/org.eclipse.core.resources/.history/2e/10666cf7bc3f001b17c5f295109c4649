@@ -24,7 +24,7 @@ public class BowlTest2604 {
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("계산할 그릇을 표시해주세요.");
+		System.out.println("계산할 그릇을 표시해주세요");
 		String bowls = scan.next();
 		scan.close();
 		
