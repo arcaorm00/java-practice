@@ -29,12 +29,13 @@ public class MessageDecowding1880 {
 			String ch = sen[i];
 			int idx = 0;
 			for (String s : cowd) {
+				idx++;
 				if(s.equals(ch)) {
 					break;
 				}
-				idx++;
 			}
-
+			
+			System.out.println(idx);
 			if (idx < 26) {
 				System.out.print(decowd[idx]);
 			}else {
@@ -42,9 +43,6 @@ public class MessageDecowding1880 {
 			}
 			
 		}
-		
-		// 예시가 제대로 된 건지 모르겠음...
-		// 위 코드 현재 eydbkmiqugjxlvtzpnwohracsf를 두번 입력하면 abcdefghijklmnopqrstuvwxyz로 복호화 됨
 		
 	}
 }

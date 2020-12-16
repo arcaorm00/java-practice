@@ -44,7 +44,6 @@ public class MessageDecowding1880 {
 		}
 		
 		// 예시가 제대로 된 건지 모르겠음...
-		// 위 코드 현재 eydbkmiqugjxlvtzpnwohracsf를 두번 입력하면 abcdefghijklmnopqrstuvwxyz로 복호화 됨
 		
 	}
 }
