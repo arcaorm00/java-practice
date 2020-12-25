@@ -16,14 +16,10 @@ public class CountingNumbers1516 {
 	
 //	output: 각 문장 단위로 단어들의 발생 빈도를 오름차순 크기(아스키코드)순으로 출력한다.
 	public static void main(String[] args) {
-		while(true) {
+		boolean isContinue = true;
+		while(isContinue) {
 			Scanner scan = new Scanner(System.in);
 			String input = scan.nextLine();
-			scan.close();
-			
-			if(input.equals("END")) {
-				break;
-			}
 			
 			String [] inputArr = input.split(" ");
 			TreeMap<String, Integer> map = new TreeMap<String, Integer>();
@@ -34,11 +30,11 @@ public class CountingNumbers1516 {
 				}else {
 					map.put(inputArr[i], 1);
 				}
+			}			
+			
+			if(input.equals("END")) {
+				isContinue = false;
 			}
-			
-			System.out.println(map.toString());
-			
-			
 		}
 	}
 }
