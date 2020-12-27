@@ -25,7 +25,7 @@ public class Lotto2817 {
 		
 		int k = Integer.parseInt(input.split(" ")[0]);
 		
-		int [] arr = new int[k];
+		String [] arr = input.split(" ");
 		
 		
 		
