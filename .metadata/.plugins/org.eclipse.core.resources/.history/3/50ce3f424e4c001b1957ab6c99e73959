@@ -28,8 +28,11 @@ public class Lotto2817 {
 		int [] arr = new int[k];
 		
 		for (int i = 1; i < input.split(" ").length-1 ; i++) {
+			System.out.println(input.split(" ")[i]);
 			arr[i] = Integer.parseInt(input.split(" ")[i]);
 		}
+		
+		System.out.println(arr.toString());
 		
 		
 		

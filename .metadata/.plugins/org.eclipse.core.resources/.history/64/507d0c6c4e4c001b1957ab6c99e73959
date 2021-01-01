@@ -31,6 +31,8 @@ public class Lotto2817 {
 			arr[i] = Integer.parseInt(input.split(" ")[i]);
 		}
 		
+		System.out.println(arr.toString());
+		
 		
 		
 		
