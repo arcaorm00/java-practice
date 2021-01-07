@@ -35,7 +35,7 @@ $(function(){
 	$("#jqGrid").jqGrid({
 	   datatype: "local",
 	   data: dataArr,
-	   height: 250, 
+	   height: 300, 
 	   width: 500,
 	   colNames : ['ID','자바스크립트','파이썬','JSP'], 
 
@@ -70,17 +70,17 @@ $(function(){
 	       }],
 
 	   loadtext: "로딩중일때 표시되는 텍스트!",
-	   caption: "jQuery Grid: jqGrid 샘플",
+	   //caption: "jQuery Grid: jqGrid 샘플",
 
 	   pager:"#gridpager",
-	   rowNum:5,
+	   rowNum:10,
 
 	   //rownumbers:true,
 	   //viewrecords:true,
 	   //pgbuttons:true,
 	   //pginput:true,
 	   //shrinkToFit:true,
-	   //sortable: false,
+	   sortable: false,
 	   //loadComplete:function(data){},
 	   //scroll:true,
 	   //loadonce:false,
