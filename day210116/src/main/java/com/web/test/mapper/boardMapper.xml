@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="freeBoard">
+  <select id="selectFreeBoard" resultType="java.util.Map">
+    select codeType, num, title, name, content, regdate from FREEBOARD
+  </select>
+  
+  <select id="getFreeBoard">
+  	select codeType, num, title, name, content, regdate from FREEBOARD where num = #{num}
+  </select>
+  
+  <insert id="insertFreeBoard">
+  	insert into FREEBOARD values(
+  		#{ codeType }, #{ num }, #{ title }, #{ name }, #{ content }, #{ regdate }
+  	)
+  </insert>
+  
+  <update id="updateFreeBoard">
+  	update FREEBOARD 
+  	   set codeType = #{ codeType }, title = #{ title }, content = #{ content }
+  	 where num = #{ num }
+  </update>
+  
+  <delete id="deleteFreeBoard">
+  	delete FREEBOARD where num = #{ num }
+  </delete>
+</mapper>
