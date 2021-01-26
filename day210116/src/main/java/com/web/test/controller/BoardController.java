@@ -27,6 +27,13 @@ public class BoardController {
 	}
 	
 	@RequestMapping("/insertBoard")
+	public ModelAndView insertBoard(HttpServletRequest request) {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("freeBoardInsert");
+		return mav;
+	}
+	
+	@RequestMapping("/insertBoardPro")
 	@ResponseBody
 	public Map<String, Object> insertBoard(HttpServletRequest request, Map<String, Object> board) {
 		int re = 0;
@@ -36,5 +43,14 @@ public class BoardController {
 		return resultMap;
 	}
 	
+	@RequestMapping("/updateBoardPro")
+	@ResponseBody
+	public Map<String, Object> updateBoard(HttpServletRequest request, Map<String, Object> board){
+		int re = 0;
+		re = boardService.updateFreeBoard(board);
+		Map<String, Object> resultMap = new HashMap<String, Object>();
+		resultMap.put("re", re);
+		return resultMap;
+	}
 	
 }
