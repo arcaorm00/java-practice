@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
@@ -35,7 +36,7 @@ public class BoardController {
 	
 	@RequestMapping("/insertBoardPro")
 	@ResponseBody
-	public Map<String, Object> insertBoard(HttpServletRequest request, Map<String, Object> board) {
+	public Map<String, Object> insertBoard(HttpServletRequest request, @RequestBody Map<String, Object> board) {
 		int re = 0;
 		re = boardService.insertFreeBoard(board);
 		Map<String, Object> resultMap = new HashMap<String, Object>();
@@ -45,9 +46,17 @@ public class BoardController {
 	
 	@RequestMapping("/updateBoardPro")
 	@ResponseBody
-	public Map<String, Object> updateBoard(HttpServletRequest request, Map<String, Object> board){
+	public Map<String, Object> updateBoard(HttpServletRequest request, @RequestBody Map<String, Object> board){
 		int re = 0;
 		re = boardService.updateFreeBoard(board);
+		Map<String, Object> resultMap = new HashMap<String, Object>();
+		resultMap.put("re", re);
+		return resultMap;
+	}
+	
+	public Map<String, Object> deleteBoard(HttpServletRequest request, int num){
+		int re = 0;
+		re = boardService.deleteFreeBoard(num);
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		resultMap.put("re", re);
 		return resultMap;

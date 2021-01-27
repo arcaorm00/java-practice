@@ -34,8 +34,8 @@ public class BoardService implements BoardServiceImpl {
 	}
 
 	@Override
-	public int deleteFreeBoard(Map<String, Object> map) {
-		return sqlSessionTemplate.delete("deleteFreeBoard", map);
+	public int deleteFreeBoard(int num) {
+		return sqlSessionTemplate.delete("deleteFreeBoard", num);
 	}
 
 }

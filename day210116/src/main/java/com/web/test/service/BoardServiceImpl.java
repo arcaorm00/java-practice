@@ -13,5 +13,5 @@ public interface BoardServiceImpl {
 	
 	public int updateFreeBoard(Map<String, Object> map);
 	
-	public int deleteFreeBoard(Map<String, Object> map);
+	public int deleteFreeBoard(int num);
 }
