@@ -1,5 +1,6 @@
 package com.web.test.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,6 +25,18 @@ public class BoardController {
 	@RequestMapping("/main")
 	public ModelAndView main(HttpServletRequest request) {
 		ModelAndView mav = new ModelAndView("boardMain");
+		List<Map<String, Object>> list = new ArrayList<Map<String,Object>>();
+		mav.addObject("list", list);
+		return mav;
+	}
+	
+	@RequestMapping("/detailBoard")
+	public ModelAndView detailBoard(HttpServletRequest request, int num) {
+		ModelAndView mav = new ModelAndView("freeBoardDetail");
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("num", num);
+		Map<String, Object> board = boardService.getFreeBoard(map);
+		mav.addObject("board", board);
 		return mav;
 	}
 	
@@ -43,7 +56,7 @@ public class BoardController {
 		resultMap.put("re", re);
 		return resultMap;
 	}
-	
+
 	@RequestMapping("/updateBoardPro")
 	@ResponseBody
 	public Map<String, Object> updateBoard(HttpServletRequest request, @RequestBody Map<String, Object> board){
@@ -54,6 +67,8 @@ public class BoardController {
 		return resultMap;
 	}
 	
+	@RequestMapping("/deleteBoard")
+	@ResponseBody
 	public Map<String, Object> deleteBoard(HttpServletRequest request, int num){
 		int re = 0;
 		re = boardService.deleteFreeBoard(num);
