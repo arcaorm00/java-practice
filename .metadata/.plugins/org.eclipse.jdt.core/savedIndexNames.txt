@@ -19,7 +19,6 @@ INDEX VERSION 1.131+C:\Users\ui\eclipse-practice\.metadata\.plugins\org.eclipse.
 1108842228.index
 2135261471.index
 3640946914.index
-2346094620.index
 3322430591.index
 3352959740.index
 4002702740.index
