@@ -12,6 +12,6 @@ public class LoginController {
 	
 	@RequestMapping(value="/login/accessDenied.do")
 	public String accessDeniedPage() throws Exception {
-	return "/login/accessDenied";
+		return "/login/accessDenied";
 	}
 }
