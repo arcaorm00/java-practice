@@ -11,9 +11,9 @@
 		<intercept-url pattern="/resources/**" access="permitAll"/>
 		<intercept-url pattern="/login/**" access="permitAll" />
 		<intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
-		<form-login login-page="/login/login.do"
+		<form-login login-page="/login/loginPage.do"
 					login-processing-url="/login.do"
-					authentication-failure-url="/login/login.do?err=true"
+					authentication-failure-url="/login/loginPage.do?err=true"
 					default-target-url="/"
 					username-parameter="userid"
 					password-parameter="userpw" />
@@ -22,6 +22,7 @@
 		</session-management>
 		<access-denied-handler error-page="/login/accessDenied.do" />
 	</http>
+	
 	<authentication-manager>
 		<authentication-provider>
 			<user-service>

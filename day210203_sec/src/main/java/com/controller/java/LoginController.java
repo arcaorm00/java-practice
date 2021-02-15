@@ -10,10 +10,11 @@ public class LoginController {
 
 	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
-	@RequestMapping(value="/login/login.do")
+	@RequestMapping(value="/login/loginPage.do")
 	public String login() {
 		return "/login/login";
 	}
+	
 	@RequestMapping(value="/login/accessDenied.do")
 	public String accessDeniedPage() throws Exception {
 		return "/login/accessDenied";
