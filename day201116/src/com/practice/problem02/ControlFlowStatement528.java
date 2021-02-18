@@ -9,6 +9,7 @@ public class ControlFlowStatement528 {
 		System.out.print("정수를 입력해주세요: ");
 		Scanner scan = new Scanner(System.in);
 		int inputNum = scan.nextInt();
+		scan.close();
 		
 		if (inputNum < 0) {
 			System.out.println("minus");
