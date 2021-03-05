@@ -9,6 +9,7 @@ public class ControlFlowStatement120 {
 		System.out.print("차를 구할 두 수를 입력해주세요: ");
 		
 		String input = scan.nextLine();
+		scan.close();
 		
 		int x = Integer.parseInt(input.split(" ")[0]);
 		int y = Integer.parseInt(input.split(" ")[1]);
