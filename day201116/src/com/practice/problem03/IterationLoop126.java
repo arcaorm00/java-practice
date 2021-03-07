@@ -16,7 +16,6 @@ public class IterationLoop126 {
 		while(input != 0) {
 			input = scan.nextInt();
 			if (input == 0) {
-				scan.ioException();
 				break;
 			}else if (input % 2 == 0) {
 				countEven += 1;
