@@ -7,6 +7,7 @@ public class IterationLoop125 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int input = scan.nextInt();
+		scan.close();
 		
 		for(int i = 1 ; i <= input ; i++) {
 			System.out.print(i + " ");

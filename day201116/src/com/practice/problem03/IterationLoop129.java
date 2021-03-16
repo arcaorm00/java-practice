@@ -20,5 +20,6 @@ public class IterationLoop129 {
 			System.out.print("Continue? ");
 			input = scan.next().charAt(0);
 		}
+		scan.close();
 	}
 }
