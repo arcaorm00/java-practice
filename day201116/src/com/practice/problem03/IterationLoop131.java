@@ -8,6 +8,7 @@ public class IterationLoop131 {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		int m = scan.nextInt();
+		scan.close();
 		
 		if (n < m) {
 			int temp = m;
