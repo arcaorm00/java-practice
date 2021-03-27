@@ -22,8 +22,9 @@ public class IterationLoop135 {
 				count++;
 			}
 		}
-
+		
+		avg = tot / (double)count;
 		System.out.println("total: " + tot);
-		System.out.printf("average: %.1f", tot / (double)count);
+		System.out.printf("average: %.1f", avg);
 	}
 }
