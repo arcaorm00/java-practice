@@ -18,10 +18,10 @@ public class IterationLoop143 {
 			System.out.println();
 		}
 		for (int i = 1 ; i < input ; i++) {
-			for (int j = i ; j < input ; j++) {
-				System.out.println(" ");
+			for (int j = i+1 ; j < input ; j++) {
+				System.out.print(" ");
 			}
-			for (int k = 0 ; k < i ; k++) {
+			for (int k = 0 ; k <= i*2 ; k++) {
 				System.out.print("*");
 			}
 			System.out.println();
