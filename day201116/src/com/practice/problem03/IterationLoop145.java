@@ -13,11 +13,11 @@ public class IterationLoop145 {
 		scan.close();
 		
 		for (int i = 1 ; i <= input ; i++) {
-			for (int j = i ; j < input ; j++) {
+			for (int j = i*2 ; j < input*2 ; j++) {
 				System.out.print(" ");
 			}
 			for (int k = 1 ; k <= i ; k++) {
-				System.out.print(k);
+				System.out.print(k + " ");
 			}
 			System.out.println();
 		}
