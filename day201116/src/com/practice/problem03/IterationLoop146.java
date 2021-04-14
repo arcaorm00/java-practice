@@ -28,8 +28,6 @@ public class IterationLoop146 {
 				num++;
 			}
 			System.out.println();
-			
-			
 		}
 	}
 }
