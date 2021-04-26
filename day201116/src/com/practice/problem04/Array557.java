@@ -8,6 +8,7 @@ public class Array557 {
 		Scanner scan = new Scanner(System.in);
 		String input = scan.nextLine();
 		String [] array = input.split(" ");
+		scan.close();
 		
 		System.out.print(array[0] + " ");
 		System.out.print(array[3] + " ");
