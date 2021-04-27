@@ -11,6 +11,7 @@ public class Array558 {
 		for (i = 0 ; i < array.length ; i++) {
 			Scanner scan = new Scanner(System.in);
 			int input = scan.nextInt();
+			scan.close();
 			if (input != 0) {
 				array[i] = input;
 			}else {
