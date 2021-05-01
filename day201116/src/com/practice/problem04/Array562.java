@@ -13,7 +13,6 @@ public class Array562 {
 		
 		int sumEven = 0;
 		int sumOdd = 0;
-		double avg = 0;
 		
 		for (int i = 1 ; i <= array.length ; i++) {
 			if (i % 2 == 0) {
